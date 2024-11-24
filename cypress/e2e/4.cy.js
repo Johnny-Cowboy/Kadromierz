@@ -4,9 +4,10 @@ import { login } from "../loginPage/loginPage";
 import SideBarMenu from "../sidebarMenu/sideBarMenu";
 import RequestsWindow from "../requestsWindow/requestsWindow";
 import AddVacationWindow from "../requestsWindow/addVacationWindow";
+import Assertions from "../assertions/assertions";
 
 context("Automated test for leave request submission and approval", () => {
-  let sideBarMenu, requestsWindow, addVacationWindow;
+  let sideBarMenu, requestsWindow, addVacationWindow, assertions;
 
   const employeeName = "Adam Adamski"; // Employee first name and last name.
   const leaveType = "Oddanie krwi"; // Type of leave.
@@ -18,6 +19,8 @@ context("Automated test for leave request submission and approval", () => {
     sideBarMenu = new SideBarMenu();
     requestsWindow = new RequestsWindow();
     addVacationWindow = new AddVacationWindow();
+    assertions = new Assertions();
+    
   });
 
   beforeEach(() => {
@@ -34,6 +37,7 @@ context("Automated test for leave request submission and approval", () => {
    requestsWindow.openRequestDetails(); // Select application options.
    requestsWindow.confirmVacationRequest(); // Select application details.
    requestsWindow.confirmButtonVacation(); // Request approved.
+   assertions.statusChangedSuccessfully(); // Checking toast notification
   });
 });
 

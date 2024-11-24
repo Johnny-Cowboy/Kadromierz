@@ -6,9 +6,10 @@ import Employees from "../employees/employees";
 import Basics from "../employeeInformation/basic";
 import Locations from "../employeeInformation/locations";
 import PositionsAndRates from "../employeeInformation/positionsAndRates";
+import Assertions from "../assertions/assertions";
 
 context("Automated test for adding a new employee functionality", () => {
-  let sideBarMenu, employees, basics, locations, positionsAndRates;
+  let sideBarMenu, employees, basics, locations, positionsAndRates, assertions;
   //Test data
   const employeeData = {
     name: "John",
@@ -24,6 +25,7 @@ context("Automated test for adding a new employee functionality", () => {
     basics = new Basics();
     locations = new Locations();
     positionsAndRates = new PositionsAndRates();
+    assertions = new Assertions();
   });
 
   beforeEach(() => {
@@ -36,5 +38,6 @@ context("Automated test for adding a new employee functionality", () => {
     basics.fillPersonalDetails(employeeData); // Completing basic data.
     locations.selectLocation("Twoja lokalizacja"); // Location selection.
     positionsAndRates.selectPositionAndSave("Obsługa klienta"); // Selecting a position and signing up.
+    assertions.newEmployeeAdded(); // Checking toast notification
   });
 });
