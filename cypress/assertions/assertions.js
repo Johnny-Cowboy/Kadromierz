@@ -10,7 +10,6 @@ class Assertions {
       .should("be.visible")
       .and("contain.text", "Dodano zmianę!");
   }
-
   statusChangedSuccessfully() {
     cy.get(".rrt-middle-container")
       .should("be.visible")

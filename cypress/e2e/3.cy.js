@@ -37,7 +37,7 @@ context(
       rosterWindow.selectDate(); // Picks a days from the schedule.
       scheduleChange.updateHours(testHours); // Hour update.
       scheduleChange.confirm(); // Confirmation of the added employee shif.
-      assertions.changeAdded(); // Checking toast notification
+      assertions.changeAdded(); // Checking toast notification.
     });
   }
 );

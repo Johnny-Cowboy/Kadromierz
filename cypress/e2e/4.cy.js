@@ -37,7 +37,7 @@ context("Automated test for leave request submission and approval", () => {
    requestsWindow.openRequestDetails(); // Select application options.
    requestsWindow.confirmVacationRequest(); // Select application details.
    requestsWindow.confirmButtonVacation(); // Request approved.
-   assertions.statusChangedSuccessfully(); // Checking toast notification
+   assertions.statusChangedSuccessfully(); // Checking toast notification.
   });
 });
 

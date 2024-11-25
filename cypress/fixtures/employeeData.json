@@ -1,0 +1,8 @@
+{
+    "employee": {
+          "name": "John",
+          "surname": "Frusciante",
+          "email": "john.frusciante@rhcp.com",
+          "role": "Pracownik"
+        }
+      }
