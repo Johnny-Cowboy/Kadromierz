@@ -1,4 +1,4 @@
-Cypress Automated Tests
+Cypress Automated Tests:
 This repository contains automated tests for the application’s key functionalities, developed using Cypress. 
 The tests include workflows such as adding employees, submitting leave requests, and more.
 
@@ -11,10 +11,10 @@ Test Data:
 Test data is stored in the employeeData.json file located in the fixtures folder.
 The test files are located in the e2e folder.
 
-Prerequisites
+Prerequisites:
 Make sure you have Node.js and npm.
 
-Running the Tests
+Running the Tests:
 Navigate to the project directory (the one containing the cypress folder) and use one of the following methods to execute the tests:
 
 a) Running Tests in GUI Mode
@@ -29,7 +29,6 @@ b) Running Tests in Headless Mode
  npx cypress run
  3.	The tests will execute in the background, and the results will be displayed in the terminal.
 
-Plugins Used (Test 5)
 The following plugins are used for Test 5:	
 1.	cypress-downloadfileEnables file download handling in Cypress.
 2.	xlsxProvides utilities to work with Excel files.
