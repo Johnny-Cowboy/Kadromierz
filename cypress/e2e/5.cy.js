@@ -48,7 +48,6 @@ context("Automated test involving downloading a report and comparing it to a ref
           } else {
             cy.log("The files are a match.");
           }
-
           expect(differences).to.not.be.undefined;
         });
       });
